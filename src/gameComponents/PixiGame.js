@@ -26,7 +26,7 @@ export default function PixiGame() {
   document.getElementsByClassName("canvas")[0].appendChild(game.view);
 
   const cashPrize = Assets.PRIZE_SYMBOLS_CASH;
-  const loader = new Loader();
+  const loader = new Loader("", 100);
 
   let title = new Text(
     `Spritesheet VS Single Reel loading time test`,
