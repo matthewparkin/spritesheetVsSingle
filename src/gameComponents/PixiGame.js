@@ -1,20 +1,20 @@
 import { Application, Sprite, Loader, Texture, Text } from "pixi.js";
 
 export const Assets = {
-  PRIZE_SYMBOLS_CASH: "/prize_symbols_cash.json",
+  PRIZE_SYMBOLS_CASH: "./prize_symbols_cash.json",
 };
 
 export const IndividualAssets = {
-  INDIVIDUAL_0_50: "/individuals/individual-0_50.png",
-  INDIVIDUAL_1: "/individuals/individual-1.png",
-  INDIVIDUAL_2: "/individuals/individual-2.png",
-  INDIVIDUAL_5: "/individuals/individual-5.png",
-  INDIVIDUAL_10: "/individuals/individual-10.png",
-  INDIVIDUAL_100: "/individuals/individual-100.png",
-  INDIVIDUAL_250: "/individuals/individual-250.png",
-  INDIVIDUAL_1000: "/individuals/individual-1000.png",
-  INDIVIDUAL_10000: "/individuals/individual-10000.png",
-  INDIVIDUAL_20000: "/individuals/individual-20000.png",
+  INDIVIDUAL_0_50: "./individuals/individual-0_50.png",
+  INDIVIDUAL_1: "./individuals/individual-1.png",
+  INDIVIDUAL_2: "./individuals/individual-2.png",
+  INDIVIDUAL_5: "./individuals/individual-5.png",
+  INDIVIDUAL_10: "./individuals/individual-10.png",
+  INDIVIDUAL_100: "./individuals/individual-100.png",
+  INDIVIDUAL_250: "./individuals/individual-250.png",
+  INDIVIDUAL_1000: "./individuals/individual-1000.png",
+  INDIVIDUAL_10000: "./individuals/individual-10000.png",
+  INDIVIDUAL_20000: "./individuals/individual-20000.png",
 };
 
 export default function PixiGame() {
@@ -77,7 +77,7 @@ export default function PixiGame() {
 
     function build() {
       const endTime = (performance.now() - startTime).toFixed(2)
-      const singleImage = Sprite.from(Texture.from("/individuals/individual-1.png"));
+      const singleImage = Sprite.from(Texture.from("./individuals/individual-1.png"));
       singleImage.position.set(20, 330);
       game.stage.addChild(singleImage);
       let singleImageText = new Text(
